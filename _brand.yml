@@ -51,7 +51,7 @@ defaults:
       link-hover-color: $brand-orange
 
       # Navbar stuff
-      navbar-bg: $brand-red
+      # navbar-bg: $brand-red
       navbar-fg: "#ffffff"
 
       # Quarto callouts

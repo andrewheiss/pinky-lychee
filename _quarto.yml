@@ -21,8 +21,8 @@ format:
     theme: 
       - zephyr
       - brand
-    # MoMAColors::moma.colors("ustwo")[1]
-    title-block-banner: "#d7433b"
+    # MoMAColors::moma.colors("ustwo")[2]
+    title-block-banner: "#f06a63"
 
     template-partials: 
       - "html/title-metadata.html"

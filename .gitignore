@@ -13,3 +13,5 @@ _freeze/
 _output/
 
 admin/
+
+**/*.quarto_ipynb

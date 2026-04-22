@@ -1,0 +1,17 @@
+---
+title: "AI for Me, Not (Yet) for Thee? Desirable Difficulties and Deliberate Friction with LLMs in Social Science Education"
+date: 2026-04-22
+author:
+- name: Andrew Heiss
+  affiliation: Georgia State University
+  url: "https://www.andrewheiss.com"
+  email: aheiss@gsu.edu
+  orcid: 0000-0002-3948-3914
+bibliography: bib/references.bib
+nocite: |
+  @*
+---
+
+Content forthcoming…
+
+## References

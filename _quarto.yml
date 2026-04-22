@@ -1,0 +1,75 @@
+project:
+  type: default
+  output-dir: _output
+  preview: 
+    port: 4444
+
+  render: 
+    - "index.qmd"
+
+language: 
+  title-block-published: Latest version
+  related-formats-title: Other formats
+  other-links-title: Other links
+
+format:
+  wordcount-html: 
+    wordcount-banner: false
+
+    toc: true
+    shift-heading-level-by: 1
+    theme: 
+      - zephyr
+      - brand
+    # MoMAColors::moma.colors("ustwo")[1]
+    title-block-banner: "#d7433b"
+
+    template-partials: 
+      - "html/title-metadata.html"
+
+    format-links:
+      - html
+      - format: hikmah-pdf
+        text: PDF version
+        icon: file-pdf
+      - format: docx
+        text: Word version
+        icon: file-word
+
+    other-links:
+      - text: GitHub repository
+        href: https://github.com/andrewheiss/pinky-lychee/
+        icon: github
+      # - text: SocArXiv preprint
+      #   href: https://doi.org/10.31235/osf.io/wvecz_v3
+      #   icon: link-45deg
+
+    knitr:
+      opts_chunk:
+        dev: "ragg_png"
+        dpi: 300
+
+  # Nice PDF output
+  hikmah-pdf:
+    output-file: heiss_ai-for-me-not-yet-for-thee.pdf
+    # Custom fonts
+    mainfont: "Linux Libertine O"
+    mainfontoptions:
+      - "Numbers=Proportional"
+      - "Numbers=OldStyle"
+    sansfont: "Afacad Flux"
+    mathfont: "Libertinus Math"
+
+    knitr:
+      opts_chunk:
+        dev: "cairo_pdf"
+  
+  # Manuscript-y Word
+  docx:
+    output-file: heiss_ai-for-me-not-yet-for-thee.docx
+    reference-doc: pandoc/reference-styles.docx
+
+    knitr:
+      opts_chunk:
+        dev: "ragg_png"
+        dpi: 300

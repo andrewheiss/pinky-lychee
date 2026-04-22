@@ -1,0 +1,87 @@
+color:
+  palette:
+    white: "#fff"
+    gray-100: "#f8f9fa"
+    gray-200: "#e9ecef"
+    gray-300: "#ddd"
+    gray-400: "#ced4da"
+    gray-500: "#adb5bd"
+    gray-600: "#868e96"
+    gray-700: "#495057"
+    gray-800: "#343a40"
+    gray-900: "#212529"
+    black: "#000"
+
+    # Inferno colors
+    # viridisLite::viridis(8, option = "inferno", begin = 0.1, end = 0.9)
+    blue: "#42159D"
+    indigo: "#771C6D"
+    purple: "#480B6A"
+    pink: "#A52C60"
+    red: "#d7433b"
+    orange: "#f06a63"
+    yellow: "#FB9E07"
+    green: "#02b875"
+    teal: "#20c997"
+    cyan: "#17a2b8"
+  
+  primary: blue
+  secondary: gray-500
+  success: green
+  info: cyan
+  warning: yellow
+  danger: red
+
+typography:
+  fonts:
+    - family: Afacad Flux
+      source: google
+    - family: Inter
+      source: google
+  base:
+    family: Inter
+  headings:
+    family: Afacad Flux
+    weight: 700
+
+defaults:
+  bootstrap:
+    defaults:
+      link-color: $brand-red
+      link-hover-color: $brand-orange
+
+      # Navbar stuff
+      navbar-bg: $brand-red
+      navbar-fg: "#ffffff"
+
+      # Quarto callouts
+      callout-color-note: $brand-blue
+      callout-color-warning: $brand-orange
+      callout-color-important: $brand-red
+      callout-color-tip: $brand-green
+      callout-color-caution: $brand-yellow
+  
+    rules: |
+      h2.hide {
+          display: none;
+      }
+
+      .csl-bib-body {
+          font-size: 0.9em;
+      }
+
+      div.hanging-indent {
+          margin-left: 0;
+      }
+
+      #title-block-header {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+      }
+
+      .thanks-section {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+      }

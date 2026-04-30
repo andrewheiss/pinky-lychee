@@ -67,7 +67,16 @@ $endif$
   </div>
   $endif$
 </div>
-  
+
+$if(extra)$
+<div class="extra-section">
+  <div class="quarto-title-meta-heading">Details</div>
+  <div class="quarto-title-meta-contents">
+    <p class="extra">$extra$</p>
+  </div>
+</div>
+$endif$
+
 $if(abstract)$
 <div>
   <div class="abstract">

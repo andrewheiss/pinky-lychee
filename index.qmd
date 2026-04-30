@@ -1,6 +1,6 @@
 ---
-title: "AI for Me, Not (Yet) for Thee? Desirable Difficulties and Deliberate Friction with LLMs in Social Science Education"
-date: 2026-04-22
+title: "AI for Me, Not (Yet) for Thee? Desirable Difficulties and Deliberate Friction with LLMs"
+date: 2026-04-30
 author:
 - name: Andrew Heiss
   affiliations: 

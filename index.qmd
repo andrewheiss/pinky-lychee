@@ -26,10 +26,10 @@ extra: |
   on Applications of AI, "Notes on the Future of Quantitative Social Science," 
   held at the University of Toronto on May 1, 2026.
 
+  I used Anthropic's Claude Sonnet 4.6 for editorial feedback after initial drafting.
+
 date-format: "long"
 ---
-
-*Anthropic’s Claude Sonnet 4.6 was used for editorial feedback after initial drafting*
 
 In December 2025, I was grading final projects for my course on data visualization with R. On one of my screens, I had a browser open to my university's learning management system and came across a now-familiar phenomenon: a student had used verbatim ChatGPT output for their assignment. The code they included was flawless, but used function arguments and code syntax that we never covered in class and that weren't actually necessary. More concerning, the original chat prompt was inadvertently still included, along with fill-in-the-blank sections that the large language model (LLM) had included to help tailor the response to the course (e.g. "[insert an example from your professor's class here]"). Following my course's AI policy, I gave a sizable point reduction, sighed heavily, and moved on to the next assignment.
 
@@ -102,6 +102,6 @@ Introducing friction back into our workflows—returning to the struggle and des
 
 @JuavinettHicks2026 and @Juavinett2026 call for more deliberate integration of LLMs into learning, but in a way that encourages and deepens understanding rather than improving performance. To help with this, Hicks has created two Claude Code skills based on the metacognitive research of @BjorkBjork2011. `learning-goal` [@Hicks2026] helps users define explicit learning goals and plan out learning intentions, allowing users to "build back a protective habit into [their] day" by scheduling time to deliberately practice new skills. This skill pairs with `learning-opportunities` [@Hicks2026a], which offers users an adaptive lesson after completing important tasks during a Claude Code session. For instance, after creating new files or refactoring code, the skill begins a set of short Bjork-style deliberately difficult learning exercises that encourage generation, spacing, and retrieval based on the user's existing code base. I've personally enabled these skills when translating work from R to Javascript or LaTeX to Typst, and as a result I have a much stronger understanding of how these new-to-me languages work.
 
-Adding friction like this goes against the ongoing push to maximize efficiency and never touch code again. These techniques deliberately slow things down. I have not personally seen huge gains in efficiency and speed in my own work because I'm often spending time translating and restructuring code from a toy example in Claude Code to my real work. However, I have seen substantial gains in my own learning and understanding. I've found that this deliberate friction complements the desirable difficulties I incorporate in my teaching and helps me reconcile my seeming hypocrisy of "AI for me, not (yet) for thee" in my teaching. For both learners and experts, effective LLM use requires the development of—and maintenance of—knowledge that comes from difficulty and struggle. SOMETHING ABOUT FORKLIFTS
+Adding friction like this goes against the ongoing push to maximize efficiency and never touch code again. These techniques deliberately slow things down. I have not personally seen huge gains in efficiency and speed in my own work because I'm often spending time translating and restructuring code from a toy example in Claude Code to my real work. However, I have seen substantial gains in my own learning and understanding. I've found that this deliberate friction complements the desirable difficulties I incorporate in my teaching and helps me reconcile my seeming hypocrisy of "AI for me, not (yet) for thee" in my teaching. For both learners and experts, effective LLM use requires the development of—and maintenance of—knowledge that comes from difficulty and struggle.
 
 # References

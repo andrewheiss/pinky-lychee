@@ -29,6 +29,8 @@ extra: |
 date-format: "long"
 ---
 
+*Anthropic’s Claude Sonnet 4.6 was used for editorial feedback after initial drafting*
+
 In December 2025, I was grading final projects for my course on data visualization with R. On one of my screens, I had a browser open to my university's learning management system and came across a now-familiar phenomenon: a student had used verbatim ChatGPT output for their assignment. The code they included was flawless, but used function arguments and code syntax that we never covered in class and that weren't actually necessary. More concerning, the original chat prompt was inadvertently still included, along with fill-in-the-blank sections that the large language model (LLM) had included to help tailor the response to the course (e.g. "[insert an example from your professor's class here]"). Following my course's AI policy, I gave a sizable point reduction, sighed heavily, and moved on to the next assignment.
 
 While that next assignment loaded, I looked to my second screen where I had Claude Code—an agentic LLM-based coding tool developed by Anthropic—running in my code editor. I was using Claude to help translate a teaching demonstration that I had written in R several years ago into an interactive Javascript version that I could use in future statistics courses. The conversion took an hour of substantial back-and-forth with the LLM, but it was almost complete and the demonstration was working exactly how I had intended.
@@ -41,7 +43,6 @@ I am a quantitative political scientist who teaches and researches with quantita
 
 This essay is an attempt to work through this tension by examining how these tools shape and reshape the foundations of expertise required to use them. If learners can generate working code through a Google search, if they can upload a blank problem set template and get a completed assignment in seconds, and if they can design, carry out, and analyze research projects in minutes, how can they build the expertise that is required to work with LLM output? Relatedly, if experienced researchers spend the bulk of their time reviewing LLM output and not working through code themselves, what happens to their expertise? To address these questions, I argue that deliberately introducing difficulty and friction in quantitative work can allow learners to build expertise and help experienced researchers maintain it.
 
-
 # Forklifts in weight rooms
 
 Like programming, education has been a central battleground in debates over the use of AI and LLMs for automation. The drive to remove friction from learning is hardly new. In the 1960s, B.F. Skinner built on work from earlier decades to develop the idea of programmed instruction, where students independently work through a sequence of scaffolded instructional chunks, responding to short check-in questions and advancing as they answer correctly [@Twyman2020]. Errors are minimized by design, learners are rewarded as they progress, and mastery accumulates through correct repetition. Skinner believed that this process could scale indefinitely and that "teaching machines" could automate instruction entirely [@Watters2021]. His argument has proven remarkably durable. Modern online education—including university courses, degree programs, and platforms like Khan Academy—descends from the premise of programmed instruction [@RootRehfeldt2021]. For example, in 2024 Khan Academy partnered with Microsoft and OpenAI to create Khanmigo, a customized LLM aimed at bringing "time-saving and lesson-enhancing AI tools to millions of educators" [@Beatty2024]. Khanmigo was designed to serve as a personalized tutor, walking students through difficult tasks and reducing friction from the learning process. Much of contemporary AI-based educational technology follows the same premise: keep the learner moving, keep the errors low, and keep the reward signal flowing.
@@ -50,7 +51,7 @@ However, cognitive science has found that this type of streamlined programmed in
 
 Counterintuitively, "the conditions that produce the most errors during acquisition are often the very conditions that produce the most learning" [@SoderstromBjork2015, 176]. Rather than speeding through programmed instruction by memorizing Skinner-like tasks, @BjorkBjork2011 find that learners achieve more permanent learning when confronted with "desirable difficulties," or "conditions that create challenges and slow the rate of apparent learning" [@BjorkBjork2011, 57]. These difficulties include a range of strategies that are designed to deepen storage strength, such as spaced practice (where learners have time to forget concepts) or interleaving across topics (where learners cannot reference preceding examples). This in turn forces learners to engage in the processes of retrieval and generation, which improve storage strength by modifying learners' memories and making them more accessible in new contexts [@BjorkBjork2011, 61; @Bjork1975].
 
-LLMs, however, provide on-demand retrieval and completely bypass generation, notably using their own form of generation—LLMs are also called "generative AI." From a learner's perspective, turning to an LLM feels like learning, but in practice, LLMs circumvent and replace *performance*, and not *learning*. In an introductory data analysis class, a learner can generate code that runs perfectly and creates a publication-worthy plot—achieving fluent, immediate high performance with no lasting, durable learning. I can now paste any of my course problem sets into an LLM chat interface and create all the code and interpretation in under a minute.^[See https://claude.ai/share/a05db93c-0008-469f-8646-f01bd77cd7ee for an example from my casual inference course. I uploaded a Quarto file for a problem set and Claude got 90% of the assignment correct in its first try. I fixed it with one additional prompt.] Feeding empty problem sets to an always-on and often-unreliable Answer Machine does constitute generation. Learners do not retrieve past knowledge and recontextualize it and reshape their memories and understanding. Instead, generation is outsourced entirely to the machine.
+LLMs, however, provide on-demand retrieval and completely bypass generation, notably using their own form of generation—LLMs are also called "generative AI." From a learner's perspective, turning to an LLM feels like learning, but in practice, LLMs circumvent and replace *performance*, and not *learning*. In an introductory data analysis class, a learner can generate code that runs perfectly and creates a publication-worthy plot—achieving fluent, immediate high performance with no lasting, durable learning. I can now paste any of my course problem sets into an LLM chat interface and create all the code and interpretation in under a minute.^[See <https://claude.ai/share/a05db93c-0008-469f-8646-f01bd77cd7ee> for an example from my casual inference course. I uploaded a Quarto file for a problem set and Claude got 90% of the assignment correct in its first try. I fixed it with one additional prompt.] Feeding empty problem sets to an always-on and often-unreliable Answer Machine does constitute generation. Learners do not retrieve past knowledge and recontextualize it and reshape their memories and understanding. Instead, generation is outsourced entirely to the machine.
 
 Newer research in psychology and computer science is finding evidence for the need for retrieval and generation, particularly for beginner learners. In a study with nearly 1,000 high school students, @BastaniBastaniSungu2025 randomly assigned learners to two different versions of an LLM service: one that provided unfettered access to LLM prompts and one that was trained to act as a tutor and not give any direct answers. Both groups of students saw significant improvements in performance during LLM-assisted practice, but when access to the LLM was removed, students assigned to unlimited access condition underperformed compared to those in the tutoring-focused condition. The tutoring safeguards helped mitigate that reduction in performance, and in the absence of guardrails, learners tended to use LLMs as a "crutch" for learning. @BastaniBastaniSungu2025 conclude that though LLMs simplify many tasks  and provide apparent boosts in performance, "they come with the risk of deteriorating our ability to effectively learn some of the skills required to solve these tasks" [-@BastaniBastaniSungu2025, 6]. In similar research sponsored by Anthropic, @ShenTamkin2026 conducted a series of experiments to see how software developers' use of LLMs influenced their mastery of an unfamiliar Python library. Developers assigned to use AI assistance to complete new programming tasks scored significantly lower in post-task assessments, achieved no gains in productivity or efficiency, and saw an "erosion of conceptual understanding, code reading, and debugging skills" [@ShenTamkin2026, 18]. Once again, retrieval and generation are necessary for lasting learning.
 
@@ -83,87 +84,24 @@ Cheng's claim that Databot is dangerous is not due to standard risks of using li
 
 There is no LLM-based shortcut to those skills. Following @BjorkBjork2011, you cannot LLM your way into durable domain knowledge, data analysis expertise, or coding ability—these only come through struggle. Moreover, those skills can only be used by people who can understand the limitations of the resulting output. Forklifts are incredibly helpful outside the weight room, but only after mastery and practice.
 
+# Maintaining forklift skills
 
-# Maintaining forklift skills through deliberate friction
+To summarize my argument so far: no to forklifts in the gym, but yes to forklifts in the real world. The adoption of agentic LLM tools has accelerated quantitative and computational work, but to use these tools well, users must have a strong foundation of knowledge and skills. However, even skilled users need to actively manage how they engage with these tools to avoid epistemic risks like cognitive surrender [@ShawNave2026] and deskilling [@Greengard2025]. To overstretch the running metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years ([29 CFR §1910.178](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178)). The concept of "desirable difficulties" [@BjorkBjork2011] does not apply only to learners. I argue that experts should purposely seek out difficulties and introduce friction in their workflow to sharpen their problem-solving skills and maintain the humanity of their work.
 
-To summarize my argument so far: no to forklifts in the gym, but yes to forklifts in the real world. The adoption of agentic LLM tools has accelerated blah blah blah
+Personally, I find the aesthetics of AI-generated images generally repulsive and I find LLM-generated text to be dull, predictable, and full of odd tics ("it's not just X — it's Y"). It lacks a human touch. I enjoy creating things. I like being the human behind all my work. Outsourcing all of the grunt work of writing and analysis to LLMs removes humans from the process and creates—for me, at least—something that lacks ownership. For instance, in my work with Claude Code, in an effort to save time, I've occasionally attempted to create software packages from a single LLM prompt. The results seem to work, but I feel disconnected from them and rarely ever revisit them. The output feels unearned. I barely touched these projects, I was hardly involved in their creation, and I don't fully trust them. There's no humanity, and I feel no sense of ownership over the code.
 
-Even skilled users need to actively manage how they engage with these tools to avoid epistemic risks like deskilling and cognitive surrender
+In 2012, NASA published an internal report investigating failures in its past missions [@BlairRyanSchutzenhofer2012; @Boykis2026a]. One of their top findings was that outsourcing its engineering to subcontractors led to degraded engineering quality, not because quality of the subcontracted work was poor, but because ownership was diluted [@Boykis2026]. NASA's internal engineers stopped spending time with "hands-on" work and instead shifted to oversight and monitoring and subsequently lost some of their connection to those processes. @Boykis2026 argues that "ownership comes from hands on the code and data" and that outsourcing that—whether to NASA subcontractors or LLM agents—reduces that ownership.
 
-But also—to overstretch the metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years ([29 CFR §1910.178](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178)). 
+LLM-enabled research still must be human driven, with humans making decisions and humans looking at the code and humans understanding the code and humans running the code and humans writing about the output. This is especially important with quantitative scientific work, where researchers are fundamentally responsible for the ownership and validity of their code [@Poldrack2025]. While it is possible to unleash swarms of LLM agents that search the literature, design experiments, write IRB protocols, collect data, write results, and even submit papers to journals, I strongly disagree with this approach. Beyond valid arguments that this intense level of LLM use borders on plagiarism and risks swamping the scientific record with slop, humans are absent from this workflow.
 
-@Lemire2025 - heavy machinery made humans physically weaker, and society's response was not to ban machinery but to invent voluntary exercise, sport, and fitness culture. We deliberately reintroduced physical challenge into life after removing it - weird
+While LLMs theoretically allow us to remove friction and improve efficiency, I believe that should not be our goal as quantitative scholars. I find myself agreeing with Tim Requarth:
 
-Ways to create deliberate difficulty and continue learning, even as an expert
+> The path forward means acknowledging that efficiency isn’t always progress, that removing friction isn’t always improvement, and that tools designed to make us more productive might sometimes make us less capable. [@Requarth2025]
 
+Introducing friction back into our workflows—returning to the struggle and deliberate difficulties we face when initially learning these skills—can help reclaim humanity and maintain ownership when working with LLMs. My own response to this has been to treat LLM output as inherently provisional and ephemeral and to introduce deliberate friction wherever possible. For example, I approach LLMs with extreme skepticism. I don't use Claude Code in my actual project repositories or give it access to my complete real data. Instead, I use built-in toy datasets or synthetic samples of my data and create miniature examples of new analytical techniques I want to try to develop. I use LLMs to help work through this starter code and then apply it to my actual projects on my own, adapting and recontextualizing the code for my actual data. Relatedly, I treat code-related LLM output like answers from online question and answer forums like StackOverflow or blog posts that I have stumbled across—code that is not truth, not peer reviewed, might not even work, but potentially an accurate demonstration of something I'm trying to do. I have occasionally even had LLMs generate their answers and reasoning in the form of a blog post to help maintain the feeling that the output is more like a found artifact rather than something authoritative.
 
+@JuavinettHicks2026 and @Juavinett2026 call for more deliberate integration of LLMs into learning, but in a way that encourages and deepens understanding rather than improving performance. To help with this, Hicks has created two Claude Code skills based on the metacognitive research of @BjorkBjork2011. `learning-goal` [@Hicks2026] helps users define explicit learning goals and plan out learning intentions, allowing users to "build back a protective habit into [their] day" by scheduling time to deliberately practice new skills. This skill pairs with `learning-opportunities` [@Hicks2026a], which offers users an adaptive lesson after completing important tasks during a Claude Code session. For instance, after creating new files or refactoring code, the skill begins a set of short Bjork-style deliberately difficult learning exercises that encourage generation, spacing, and retrieval based on the user's existing code base. I've personally enabled these skills when translating work from R to Javascript or LaTeX to Typst, and as a result I have a much stronger understanding of how these new-to-me languages work.
 
-LLM-enabled research still must be human driven, with humans making decisions and humans looking at the code and humans understanding the code and humans running the code and humans writing about the output.
-
-
-https://vickiboykis.com/2026/04/20/build-yourself-flowers/
-
-> NASA outsourced a lot of their engineering to subcontractors. And what happened was that the engineers who understood the design and the system design based on actual experience left. And the shift that resulted eliminated independent analysis and testing and understanding of the systems. And this was what led to degradation of engineering quality
-
-
-Ownership of code - sometimes I've one-shotted a whole package but felt disconnected from it and have never revisited it. It feels gross and unearned.
-
-Personally, I find the aesthetics of AI-generated art generally repulsive and I find LLM-generated text to be dull, predictable, and full of odd tics ("it's not just X — it's Y"). It lacks a human touch.
-
-Humanity is also required for good science. Hogg and Hogg on human side of science
-
-@Requarth2025: 
-
-> The path forward means acknowledging that efficiency isn’t always progress, that removing friction isn’t always improvement, and that tools designed to make us more productive might sometimes make us less capable
-
-Offloading that work to an AI may produce a polished document while short-circuiting the epistemic process that the document was supposed to represent
-
-
-Deliberate use can help, unrestricted use harms
-
-
-However, Khanmigo has seen muted adoption, and teachers have found that students often skip the tutoring features and use it find answers directly [@Barnum2026].
-
-@Juavinett2026:
-
-> AI is OK for writing code but not for writing reports. I firmly believe that writing and thinking are fundamentally intertwined—for this reason, I also don’t use AI for any of my own writing.
-
-I have moved to in-person paper exams. In my seminar classes, I now spend the first 30 minutes having students write short reflections on paper.
-
-Writing is thinking [@Requarth2025; @Rosenzweig2023]. I enjoy creating things. I like being the human behind all my work. The scientific process requires humanity. While it is possible to unleash swarms of LLM agents that search the literature, design experiments, write IRB protocols, collect data, write results, and even submit papers to journals, I strongly disagree with this approach. Beyond valid arguments that this intense level of LLM use borders on plagiarism and risks swamping the scientific record with slop, humans are absent from this workflow.
-
-
-But perhaps we can add more of the struggle back in - adding friction throughout
-
-- Keeping a skeptical eye on Claude Code, don't give it access to my real data, treat its output like a Stack Overflow answer
-- Ask it to write up a blog post version explaining its reasoning, then pretend that you stumbled across it online and treat it accordingly (i.e. not truth, not peer reviewed, but a possibly accurate demonstration of something)
-- Make up a little toy example of what you want to do first, then have the LLM help you scale it up. This is the same idea behind reprexes
-- Use special LLMs that are preconfigured to *not* give answers (similar to @BastaniBastaniSungu2025). Mine's posit::conf 2025 talk on LLMs - special LLMs that only have access to the course materials and are trained to not provide direct answers or code
-- Cat Hicks's Claude Code skills that focus on deliberate learning, pause in the middle of tasks to quiz you about things, and help you set goals related to the tasks you're working on
-
-
-# blah stuff
-
-Loss of human side of things:
-
-- @Hogg2026
-- @Hogg2026a
-
-Tailoring tools for learning:
-
-- @Cetinkaya-Rundel2025
-- @ChungZhangKung2026
-- @Hicks2026
-- @Hicks2026a
-- @Juavinett2026
-- @JuavinettHicks2026
-- @Poldrack2025
-- @Requarth2025
-
-Need for struggle:
-
-- @Lemire2025
-- @Lin2025
-- @LoganNicholsGarcia2025
+These types of deliberate friction go against the ongoing push to maximize efficiency and never touch code again. They deliberately slow things down. But TODO Some sort of conclusion-y thing
 
 # References

@@ -56,25 +56,24 @@ Newer research in psychology and computer science is finding evidence for the ne
 
 In two experiments with students in graduate-level programming courses, @LehmannCorneliusSting2025 found that while LLM use did not affect learning outcomes in general, students who asked LLMs for solutions saw a sizable negative effect on long-term learning. Learners with less initial knowledge tended to prefer quick, immediate answers rather than exerting more focused effort for learning, and used LLMs as a substitute for learning activities as a result [@LehmannCorneliusSting2025, 25]. The repeated substitution of LLM output for actual learning activities can create a state of "cognitive surrender," where people "readily incorporate AI-generated outputs into their decision-making processes, often with minimal friction or skepticism," [@ShawNave2026, 48] bypassing learning—and critical thought—entirely.
 
-Learning is hard. Learning requires struggle and repetition and more struggle and more repetition. Removing struggle via LLMs is pedagogically costly and reduces learning. According to @BjorkBjork2011, 
+Learning is hard and takes time. Learning requires struggle and repetition and more struggle and more repetition. This isn't a form of programming hazing (i.e. "I had to walk to school uphill both ways in the snow and now you must too") It's the actual process of learning and growing and developing and improving. Using LLMs to remove that struggle—especially in the absence of a strong foundation—is pedagogically costly and reduces learning. In the words of Bjork and Bjork, 
 
 > Basically, any time that you, as a learner, look up an answer or have somebody tell you or show you something that you could, drawing on current cues and your past knowledge, generate instead, you rob yourself of a powerful learning opportunity [@BjorkBjork2011, 61].
 
-In an essay on the need for struggle in learning, Ted Chiang makes a now-popular analogy: "Using ChatGPT to complete assignments is like bringing a forklift into the weight room; you will never improve your cognitive fitness that way" [@Chiang2024]. Treating LLMs as Answer Machines prevents learners from retrieving and generating knowledge. We get answers, but we're not changed or improved or reshaped through that process.
-
+In an essay on the need for struggle in learning, Ted Chiang makes a now-popular analogy: "Using ChatGPT to complete assignments is like bringing a forklift into the weight room; you will never improve your cognitive fitness that way" [@Chiang2024]. Treating LLMs as Answer Machines prevents learners from retrieving and generating knowledge. We get answers (that may or may not be right), but we're not changed or improved or reshaped through that process.
 
 
 # Forklifts outside weight rooms
 
-I'm writing this essay at the end of the semester while grading students' final projects. Despite my pleas throughout the course to avoid LLMs—particularly at the beginning before they know what they're doing—the vast majority of these assignments use 100% LLM-generated code. As a purely anecdotal observation, their technical performance is admittedly high, but the quality of learning is markedly lower than in previous years, with lower quality outputs and shallower understanding. However, institutional limitations and job-market realities prevent me from banning these tools outright.^[Google's integration of Gemini-based answers into search results makes this impossible anyway—learners cannot look away from the R code that the LLM provides on demand.] I completely agree with Chiang's metaphor that forklifts in weight rooms are useless. But forklifts have value outside of weight rooms. 
+I'm writing this essay at the end of a semester while grading students' final projects. Despite my pleas throughout the course to avoid LLMs—particularly at the beginning before they know what they're doing—the majority of these assignments use 100% LLM-generated code. Many students have indeed replaced the work of learning with LLM forklifts. As a purely anecdotal observation, students' technical performance is now admittedly high, but the quality of learning is markedly worse than in previous years, with lower quality outputs and shallower understanding.  
 
-In industry, computer scientists and engineers are now spending substantial time working with LLMs instead of coding—shepherding, babysitting, and orchestrating agents as they work through large codebases [@citeme]. LLMs are also increasingly common in data analytics, and in turn, quantitative social science. And, as I recounted in the introduction of this essay, I myself use these tools.
+However, institutional limitations and job-market realities prevent me from banning these tools outright.^[Google's integration of Gemini-based answers into search results makes this impossible anyway—learners cannot look away from the R code that the LLM provides on demand.] In industry, computer scientists, engineers, and analysts are now spending substantial time working with LLMs. A June 2025 survey of programmers in the United States reports that 91% of respondents use LLMs for work, with most finding them useful and time-saving [@SleegersElsey2025]. The release of agentic tools like Claude Code and OpenAI's Codex in the second half of 2025 shifted the nature of programming work even more dramatically. Analysts and engineers now often "spend their days talking to the A.I., describing in plain English what they want from it and responding to the A.I.'s 'plan' for what it will do" [@Thompson2026]. Instead of writing actual code, they shepherd, babysit, argue with, and orchestrate LLM agents as they work through large codebases. The rapid adoption of these agentic tools has been staggering: in February 2026, 4% of public commits on GitHub were authored by Claude Code [@OLaughlinOntiverosNanos2026], in April 2026, Google reported that 75% of all its new code is AI-generated [@Pichai2026], and Anthropic itself claims that nearly 100% of its code is now created through Claude Code [@Zeff2026]. LLMs are also increasingly common in data analytics, and in turn, quantitative social science [@Than2026]. And, as I recounted in the introduction of this essay, I myself use these tools.
 
-When users have a strong foundation in a concept, LLMs can improve performance. In my own LLM work creating interactive visualizations, I end up discarding much of what LLMs generate—particularly its styling, colors, and odd LLM-flavored code smells [@Bryan2018]—because I have long experience with CSS, HTML, graphic design, R, and Python. I know enough to recognize which parts of the output are necessary and actually answer my question, and which parts are superfluous, inadequate, or wrong. I can only do this because of my pre-existing, pre-built foundational knowledge. 
+LLM forklifts obviously have value outside of weight rooms. But that value only comes from existing knowledge and expertise. In my own LLM work creating interactive visualizations, I end up discarding much of what LLMs generate—particularly its styling, colors, and odd LLM-flavored code smells [@Bryan2018]—because I have long experience with CSS, HTML, graphic design, R, and Python. I know enough to recognize which parts of the output are necessary and actually answer my question, and which parts are superfluous, inadequate, or wrong. I can only do this because of my pre-existing, pre-built foundational knowledge. 
 
 I've seen the same process with other adult learners when running R trainings for corporates switching from programs like SPSS and SAS to R. Researchers with long experience working with SAS macros for statistical modeling often use LLMs to translate concepts from SAS to R. They know the expected output of their newly translated code and can evaluate whether it works, and they often seek out additional understanding by checking the documentation and asking me (or an LLM) to explain why certain functions were used. Again, this kind of work with LLMs is effective because these learners already have pre-existing long-term knowledge.
 
-The world of data engineering and analytics has embraced LLMs, with varying degrees of thought for the epistemic consequences of using an Answer Machine for critical analysis. Some software purports to be able to use AI to discover, explore, model, and write up entire analyses, "freeing your team for high-value work" [@OpenAI2026], which—to me, at least—feels reckless. (And isn't the process of discovering, exploring, modeling, and writing *the* high-value work?) Others seem to approach this with more care. For instance, in 2025, Posit—the company that develops the statistical programs RStudio and Positron—released a new LLM-based tool for analyzing data called Databot that can access live R sessions and generate code that reflects currently-loaded data. In a blog post announcing the release, Posit's CTO touted its new features, but concluded with a remarkable caveat:
+The world of data engineering and analytics has embraced LLMs, with varying degrees of thought for the epistemic consequences of using an Answer Machine for critical analysis. Some software purports to be able to use AI to discover, explore, model, and write up entire analyses, "freeing your team for high-value work" [@OpenAI2026], which feels reckless. (And isn't the process of discovering, exploring, modeling, and writing *the* high-value work?) Others seem to approach this with more care. For instance, in 2025, Posit—the company that develops the statistical programs RStudio and Positron—released a new LLM-based tool for analyzing data called Databot that can access live R sessions and generate code that reflects currently-loaded data. In a blog post announcing the release, Posit's CTO touted its new features, but concluded with a remarkable caveat:
 
 > In my 30-year career writing software professionally, Databot is both the most exciting software I’ve worked on, and also the most dangerous [@ChengAltman2028].
 
@@ -82,19 +81,23 @@ Cheng's claim that Databot is dangerous is not due to standard risks of using li
 
 > …to use Databot effectively and safely, you still need the skills of a data scientist: background and domain knowledge, data analysis expertise, and coding ability [@ChengAltman2028].
 
-There is no LLM-based shortcut to those skills. Following @BjorkBjork2011, you cannot LLM your way into durable domain knowledge, data analysis expertise, or coding ability. Those skills only come through struggle, and those skills can only be used by people who can understand the limitations of the resulting output. LLM-enabled analysis still has to be human driven, with humans making decisions and humans looking at the code and humans understanding the code and humans running the code and humans writing about the output. SOMETHING relating back to forklifts outside weight rooms or hwatever.
+There is no LLM-based shortcut to those skills. Following @BjorkBjork2011, you cannot LLM your way into durable domain knowledge, data analysis expertise, or coding ability—these only come through struggle. Moreover, those skills can only be used by people who can understand the limitations of the resulting output. Forklifts are incredibly helpful outside the weight room, but only after mastery and practice.
+
+
+# Maintaining forklift skills through deliberate friction
+
+To summarize my argument so far, no to forklifts in the gym, but yes to forklifts in the real world. The adoption of agentic LLM tools has accelerated blah blah blah
+
+Even skilled users need to actively manage how they engage with these tools to avoid cognitive and epistemic risks - deskilling and cognitive surrender
+
+But also—to overstretch the metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years []. Ways to create deliberate difficulty and continue learning, even as an expert
+
+@Lemire2025 - heavy machinery made humans physically weaker, and society's response was not to ban machinery but to invent voluntary exercise, sport, and fitness culture. We deliberately reintroduced physical challenge into life after removing it - weird
 
 
 
-# Protecting ownership and maintaining humanity through deliberate friction
+LLM-enabled research still must be human driven, with humans making decisions and humans looking at the code and humans understanding the code and humans running the code and humans writing about the output.
 
-So no forklifts in the gym, yes forklifts in the real world. But also—to overstretch the metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years []. 
-
-
-
-So yes, withhold AI tools from learners until a foundation is there, but also don't necessarily go wild with completely unfettered AI use once you know what you're doing. Even skilled users need to actively manage how they engage with these tools to avoid cognitive and epistemic risks.
-
-Creating conditions of desirable difficulty is not straightforward. Since the benefits of Skinner-style practices are more immediate, learners tend to focus on performance and eschew difficulty, errors, and struggle. SOMETHING blah blah Necessity of difficulty in learning - @Bain2004 - . 
 
 Loss of human side of things:
 
@@ -126,7 +129,7 @@ Ownership of code - sometimes I've one-shotted a whole package but felt disconne
 
 deskilling, cognitive surrender 
 
-@Lemire2025 - heavy machinery made humans physically weaker, and society's response was not to ban machinery but to invent voluntary exercise, sport, and fitness culture. We deliberately reintroduced physical challenge into life after removing it - weird
+
 
 
 Personally, I find the aesthetics of AI-generated art generally repulsive and I find LLM-generated text to be dull, predictable, and full of odd tics ("it's not just X — it's Y"). It lacks a human touch.

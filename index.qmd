@@ -86,24 +86,68 @@ There is no LLM-based shortcut to those skills. Following @BjorkBjork2011, you c
 
 # Maintaining forklift skills through deliberate friction
 
-To summarize my argument so far, no to forklifts in the gym, but yes to forklifts in the real world. The adoption of agentic LLM tools has accelerated blah blah blah
+To summarize my argument so far: no to forklifts in the gym, but yes to forklifts in the real world. The adoption of agentic LLM tools has accelerated blah blah blah
 
-Even skilled users need to actively manage how they engage with these tools to avoid cognitive and epistemic risks - deskilling and cognitive surrender
+Even skilled users need to actively manage how they engage with these tools to avoid epistemic risks like deskilling and cognitive surrender
 
-But also—to overstretch the metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years []. Ways to create deliberate difficulty and continue learning, even as an expert
+But also—to overstretch the metaphor—forklifts require special training courses and certification, and forklift operators in the United States must renew their licenses every three years ([29 CFR §1910.178](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178)). 
 
 @Lemire2025 - heavy machinery made humans physically weaker, and society's response was not to ban machinery but to invent voluntary exercise, sport, and fitness culture. We deliberately reintroduced physical challenge into life after removing it - weird
+
+Ways to create deliberate difficulty and continue learning, even as an expert
 
 
 
 LLM-enabled research still must be human driven, with humans making decisions and humans looking at the code and humans understanding the code and humans running the code and humans writing about the output.
 
 
+https://vickiboykis.com/2026/04/20/build-yourself-flowers/
+
+> NASA outsourced a lot of their engineering to subcontractors. And what happened was that the engineers who understood the design and the system design based on actual experience left. And the shift that resulted eliminated independent analysis and testing and understanding of the systems. And this was what led to degradation of engineering quality
+
+
+Ownership of code - sometimes I've one-shotted a whole package but felt disconnected from it and have never revisited it. It feels gross and unearned.
+
+Personally, I find the aesthetics of AI-generated art generally repulsive and I find LLM-generated text to be dull, predictable, and full of odd tics ("it's not just X — it's Y"). It lacks a human touch.
+
+Humanity is also required for good science. Hogg and Hogg on human side of science
+
+@Requarth2025: 
+
+> The path forward means acknowledging that efficiency isn’t always progress, that removing friction isn’t always improvement, and that tools designed to make us more productive might sometimes make us less capable
+
+Offloading that work to an AI may produce a polished document while short-circuiting the epistemic process that the document was supposed to represent
+
+
+Deliberate use can help, unrestricted use harms
+
+
+However, Khanmigo has seen muted adoption, and teachers have found that students often skip the tutoring features and use it find answers directly [@Barnum2026].
+
+@Juavinett2026:
+
+> AI is OK for writing code but not for writing reports. I firmly believe that writing and thinking are fundamentally intertwined—for this reason, I also don’t use AI for any of my own writing.
+
+I have moved to in-person paper exams. In my seminar classes, I now spend the first 30 minutes having students write short reflections on paper.
+
+Writing is thinking [@Requarth2025; @Rosenzweig2023]. I enjoy creating things. I like being the human behind all my work. The scientific process requires humanity. While it is possible to unleash swarms of LLM agents that search the literature, design experiments, write IRB protocols, collect data, write results, and even submit papers to journals, I strongly disagree with this approach. Beyond valid arguments that this intense level of LLM use borders on plagiarism and risks swamping the scientific record with slop, humans are absent from this workflow.
+
+
+But perhaps we can add more of the struggle back in - adding friction throughout
+
+- Keeping a skeptical eye on Claude Code, don't give it access to my real data, treat its output like a Stack Overflow answer
+- Ask it to write up a blog post version explaining its reasoning, then pretend that you stumbled across it online and treat it accordingly (i.e. not truth, not peer reviewed, but a possibly accurate demonstration of something)
+- Make up a little toy example of what you want to do first, then have the LLM help you scale it up. This is the same idea behind reprexes
+- Use special LLMs that are preconfigured to *not* give answers (similar to @BastaniBastaniSungu2025). Mine's posit::conf 2025 talk on LLMs - special LLMs that only have access to the course materials and are trained to not provide direct answers or code
+- Cat Hicks's Claude Code skills that focus on deliberate learning, pause in the middle of tasks to quiz you about things, and help you set goals related to the tasks you're working on
+
+
+# blah stuff
+
 Loss of human side of things:
 
 - @Hogg2026
 - @Hogg2026a
-- @Karamanis2026
 
 Tailoring tools for learning:
 
@@ -121,55 +165,5 @@ Need for struggle:
 - @Lemire2025
 - @Lin2025
 - @LoganNicholsGarcia2025
-
-
-
-
-Ownership of code - sometimes I've one-shotted a whole package but felt disconnected from it and have never revisited it. It feels gross and unearned.
-
-deskilling, cognitive surrender 
-
-
-
-
-Personally, I find the aesthetics of AI-generated art generally repulsive and I find LLM-generated text to be dull, predictable, and full of odd tics ("it's not just X — it's Y"). It lacks a human touch.
-
-Humanity is also required for good science. Karamanis and Hogg and Hogg on human side of science
-
-@Requarth2025: 
-
-> The path forward means acknowledging that efficiency isn’t always progress, that removing friction isn’t always improvement, and that tools designed to make us more productive might sometimes make us less capable
-
-Offloading that work to an AI may produce a polished document while short-circuiting the epistemic process that the document was supposed to represent
-
-
-
-Deliberate use can help, unrestricted use harms
-
-
-However, Khanmigo has seen muted adoption, and teachers have found that students often skip the tutoring features and use it find answers directly [@Barnum2026].
-
-@Juavinett2026:
-
-> AI is OK for writing code but not for writing reports. I firmly believe that writing and thinking are fundamentally intertwined—for this reason, I also don’t use AI for any of my own writing.
-
-I have moved to in-person paper exams. In my seminar classes, I now spend the first 30 minutes having students write short reflections on paper.
-
-Writing is thinking [@Requarth2025; @Rosenzweig2023]. I enjoy creating things. I like being the human behind all my work. The scientific process requires humanity. While it is possible to unleash swarms of LLM agents that search the literature, design experiments, write IRB protocols, collect data, write results, and even submit papers to journals, I strongly disagree with this approach. Beyond valid arguments that this intense level of LLM use borders on plagiarism and risks swamping the scientific record with slop, humans are absent from this workflow.
-
-> What's great about science is its people. The slow, stubborn, sometimes painful process by which a confused student becomes an independent thinker. If we use these tools to bypass that process in favor of faster output, we don't just risk taking away what's great about science. We take away the only part of it that wasn't replaceable in the first place. [@Karamanis2026]
-
-
-> In all of these cases, the human is the architect. The machine holds the dictionary. The thinking has already been done, and the tool is just smoothing the last mile of execution. But the moment you use the machine to bypass the thinking itself, to let it make the methodological choices, to let it decide what the data means, to let it write the argument while you nod along, you have crossed a line that is very difficult to see and very difficult to uncross. You haven't saved time. You've forfeited the experience that the time was supposed to give you. [@Karamanis2026]
-
-But perhaps we can add more of the struggle back in - adding friction throughout
-
-- Keeping a skeptical eye on Claude Code, don't give it access to my real data, treat its output like a Stack Overflow answer
-- Ask it to write up a blog post version explaining its reasoning, then pretend that you stumbled across it online and treat it accordingly (i.e. not truth, not peer reviewed, but a possibly accurate demonstration of something)
-- Make up a little toy example of what you want to do first, then have the LLM help you scale it up. This is the same idea behind reprexes
-- Use special LLMs that are preconfigured to *not* give answers (similar to @BastaniBastaniSungu2025). Mine's posit::conf 2025 talk on LLMs - special LLMs that only have access to the course materials and are trained to not provide direct answers or code
-- Cat Hicks's Claude Code skills that focus on deliberate learning, pause in the middle of tasks to quiz you about things, and help you set goals related to the tasks you're working on
-
-
 
 # References

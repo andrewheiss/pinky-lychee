@@ -6,6 +6,7 @@ project:
 
   render: 
     - "index.qmd"
+    - "slides.qmd"
 
 language: 
   title-block-published: Latest version
@@ -37,6 +38,9 @@ format:
       #   icon: file-word
 
     other-links:
+      - text: Slides
+        href: slides.html
+        icon: easel3
       - text: GitHub repository
         href: https://github.com/andrewheiss/pinky-lychee/
         icon: github

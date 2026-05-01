@@ -29,12 +29,12 @@ format:
 
     format-links:
       - html
-      - format: hikmah-pdf
+      - format: typst
         text: PDF version
         icon: file-pdf
-      - format: docx
-        text: Word version
-        icon: file-word
+      # - format: docx
+      #   text: Word version
+      #   icon: file-word
 
     other-links:
       - text: GitHub repository
@@ -48,21 +48,35 @@ format:
       opts_chunk:
         dev: "ragg_png"
         dpi: 300
-
-  # Nice PDF output
-  hikmah-pdf:
+  
+  typst:
     output-file: heiss_ai-for-me-not-yet-for-thee.pdf
-    # Custom fonts
-    mainfont: "Linux Libertine O"
-    mainfontoptions:
-      - "Numbers=Proportional"
-      - "Numbers=OldStyle"
-    sansfont: "Afacad Flux"
-    mathfont: "Libertinus Math"
+    pdf-standard: ua-1
+    margin:
+      top: 120pt    # 10p0
+      bottom: 120pt #10p0
+      left: 132pt   # 11p0
+      right: 132pt  # 11p0
 
-    knitr:
-      opts_chunk:
-        dev: "cairo_pdf"
+    mainfont: "Linux Libertine O"
+    fontsize: 10.5pt
+
+    citeproc: true
+    link-citations: true
+    linkcolor: "#D64038"
+
+    include-in-header:
+      text: |
+        #set par(
+          first-line-indent: 1em,
+          spacing: 0.65em
+        )
+
+        #show <refs>: it => {
+          set par(hanging-indent: 1em)
+          set text(size: 9.5pt)
+          it
+        }
   
   # Manuscript-y Word
   docx:

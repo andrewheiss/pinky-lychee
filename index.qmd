@@ -18,6 +18,9 @@ author:
   attributes:
     corresponding: true
 
+abstract: |
+  I am simultaneously a critical skeptic of large language models (LLM) and their role in the learning process, and a reluctant and wary user of those same tools in my own work. This essay is an attempt to work through this tension by examining how LLM-based tools shape and reshape the foundations of expertise required to use them. If learners can generate working code through a Google search, if they can upload a blank problem set template and get a completed assignment in seconds, and if they can design, carry out, and analyze research projects in minutes, how can they build the expertise that is required to work with LLM output? Relatedly, if experienced researchers spend the bulk of their time reviewing LLM output and not working through code themselves, what happens to their expertise? The answer to these questions, I argue, is to deliberately introduce difficulty and friction in quantitative work, allowing learners to build expertise and helping experienced researchers maintain it.
+
 bibliography: bib/references.bib
 
 extra: |
@@ -25,8 +28,6 @@ extra: |
   [Toronto Data Workshop](https://rohanalexander.com/tdw.html)'s 2nd Colloquium 
   on Applications of AI, "Notes on the Future of Quantitative Social Science," 
   held at the University of Toronto on May 1, 2026.
-
-  I used Anthropic's Claude Sonnet 4.6 for editorial feedback after initial drafting.
 
 date-format: "long"
 ---
@@ -103,5 +104,9 @@ Introducing friction back into our workflows—returning to the struggle and des
 @JuavinettHicks2026 and @Juavinett2026 call for more deliberate integration of LLMs into learning, but in a way that encourages and deepens understanding rather than improving performance. To help with this, Hicks has created two Claude Code skills based on the metacognitive research of @BjorkBjork2011. `learning-goal` [@Hicks2026] helps users define explicit learning goals and plan out learning intentions, allowing users to "build back a protective habit into [their] day" by scheduling time to deliberately practice new skills. This skill pairs with `learning-opportunities` [@Hicks2026a], which offers users an adaptive lesson after completing important tasks during a Claude Code session. For instance, after creating new files or refactoring code, the skill begins a set of short Bjork-style deliberately difficult learning exercises that encourage generation, spacing, and retrieval based on the user's existing code base. I've personally enabled these skills when translating work from R to Javascript or LaTeX to Typst, and as a result I have a much stronger understanding of how these new-to-me languages work.
 
 Adding friction like this goes against the ongoing push to maximize efficiency and never touch code again. These techniques deliberately slow things down. I have not personally seen huge gains in efficiency and speed in my own work because I'm often spending time translating and restructuring code from a toy example in Claude Code to my real work. However, I have seen substantial gains in my own learning and understanding. I've found that this deliberate friction complements the desirable difficulties I incorporate in my teaching and helps me reconcile my seeming hypocrisy of "AI for me, not (yet) for thee." For both learners and experts, effective LLM use requires developing and maintaining the knowledge that comes from difficulty and struggle.
+
+::: {.callout-note title="AI usage statement"}
+AI usage statement: I used Anthropic's Claude Sonnet 4.6 for editorial feedback after initial drafting.
+:::
 
 # References

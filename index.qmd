@@ -1,11 +1,12 @@
 ---
 title: "AI for Me, Not (Yet) for Thee? Desirable Difficulties and Deliberate Friction with LLMs"
+short-title: "AI for Me, Not (Yet) for Thee?"
 date: 2026-05-01
 author:
 - name: Andrew Heiss
   affiliations: 
     - id: gsu
-      name: Andrew Young School of Policy Studies, Georgia State University
+      name: Georgia State University
       department: Andrew Young School of Policy Studies, Department of Public Management and Policy
       address: "55 Park Place NE, #464"
       city: Atlanta
@@ -106,7 +107,7 @@ Introducing friction back into our workflows—returning to the struggle and des
 Adding friction like this goes against the ongoing push to maximize efficiency and never touch code again. These techniques deliberately slow things down. I have not personally seen huge gains in efficiency and speed in my own work because I'm often spending time translating and restructuring code from a toy example in Claude Code to my real work. However, I have seen substantial gains in my own learning and understanding. I've found that this deliberate friction complements the desirable difficulties I incorporate in my teaching and helps me reconcile my seeming hypocrisy of "AI for me, not (yet) for thee." For both learners and experts, effective LLM use requires developing and maintaining the knowledge that comes from difficulty and struggle.
 
 ::: {.callout-note title="AI usage statement"}
-AI usage statement: I used Anthropic's Claude Sonnet 4.6 for editorial feedback after initial drafting.
+I used Anthropic's Claude Sonnet 4.6 for editorial feedback after initial drafting.
 :::
 
 # References

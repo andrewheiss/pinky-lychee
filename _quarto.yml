@@ -28,11 +28,26 @@ format:
     template-partials: 
       - "html/title-metadata.html"
 
+    include-after-body: 
+      - text: |
+          <script>
+          document.querySelectorAll('.quarto-alternate-formats a').forEach(a => {
+            a.childNodes.forEach(node => {
+              if (node.nodeType === Node.TEXT_NODE) {
+                node.textContent = node.textContent.replace(/\s*\(.*?\)\s*$/, '');
+              }
+            });
+          });
+          </script>
+
     format-links:
       - html
-      - format: typst
+      - format: hikmah-typst
         text: PDF version
         icon: file-pdf
+      # - format: hikmah-manuscript-typst+md
+      #   text: Manuscripty PDF version
+      #   icon: file-pdf
       # - format: docx
       #   text: Word version
       #   icon: file-word
@@ -53,34 +68,20 @@ format:
         dev: "ragg_png"
         dpi: 300
   
-  typst:
+  hikmah-typst: 
     output-file: heiss_ai-for-me-not-yet-for-thee.pdf
     pdf-standard: ua-1
-    margin:
-      top: 120pt    # 10p0
-      bottom: 120pt #10p0
-      left: 132pt   # 11p0
-      right: 132pt  # 11p0
 
-    mainfont: "Linux Libertine O"
-    fontsize: 10.5pt
+    mainfont: Linux Libertine O
+    linkcolor: "#d7433b"
+    title-size: 1.55em
+  
+  # hikmah-manuscript-typst+md: 
+  #   output-file: heiss_ai-for-me-not-yet-for-thee_ms.pdf
+  #   pdf-standard: ua-1
 
-    citeproc: true
-    link-citations: true
-    linkcolor: "#D64038"
-
-    include-in-header:
-      text: |
-        #set par(
-          first-line-indent: 1em,
-          spacing: 0.65em
-        )
-
-        #show <refs>: it => {
-          set par(hanging-indent: 1em)
-          set text(size: 9.5pt)
-          it
-        }
+  #   mainfont: Linux Libertine O
+  #   linkcolor: "#d7433b"
   
   # Manuscript-y Word
   docx:

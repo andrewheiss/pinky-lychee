@@ -42,7 +42,7 @@ typography:
     family: Inter
   headings:
     family: Afacad Flux
-    weight: 700
+    weight: bold
 
 defaults:
   bootstrap:
